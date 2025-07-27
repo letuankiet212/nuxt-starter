@@ -27,6 +27,8 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
   ],
 
+  ssr:true,
+
   css: [
     '~/app/assets/style/animations.scss',
     '~/app/assets/style/tailwind.css',
@@ -66,4 +68,8 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-12-05',
+
+  nitro:{
+  compressPublicAssets: true
+  }
 });
